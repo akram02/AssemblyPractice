@@ -1,14 +1,6 @@
 .model small
 .stack 100h
-.data
-msg_even db 10, 13, 'Number is even$'
-msg_odd db 10, 13, 'Number is odd$'
-.code
-
 main proc
-    mov ax, @data
-    mov ds, ax
-
     mov ah, 1
     int 21h
 
